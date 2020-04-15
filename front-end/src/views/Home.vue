@@ -28,12 +28,8 @@ export default {
       items: []
     };
   },
-  async created() {
-    await this.getItems()
-    this.items.forEach(x => {
-      console.log(x.description)
-    });
-    
+  created() {
+    this.getItems()
   },
   methods: {
     async getItems() {
