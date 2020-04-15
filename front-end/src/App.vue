@@ -13,6 +13,7 @@
   <div class="content">
     <router-view />
   </div>
+  <br><br><br>
   <div class="footer">
     <router-link to="/admin">Admin</router-link>
     <p>View source code on <a

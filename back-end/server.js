@@ -4,10 +4,10 @@ const bodyParser = require("body-parser");
 // Configure multer so that it will upload to '../front-end/public/images'
 const multer = require('multer')
 const upload = multer({
-  dest: '../front-end/public/images/',
-  limits: {
+  dest: '/home/jared/www/creative4/images/',
+  /*limits: {
     fileSize: 10000000
-  }
+  }*/
 });
 
 const app = express();
@@ -29,7 +29,7 @@ const itemSchema = new mongoose.Schema({
 const Item = mongoose.model('Item', itemSchema);
 
 // connect to the database
-mongoose.connect('mongodb://localhost:27017/museum', {
+mongoose.connect('mongodb://localhost:27017/creative4', {
   useNewUrlParser: true
 });
 
