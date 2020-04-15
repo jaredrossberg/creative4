@@ -16,7 +16,7 @@
   <div class="footer">
     <router-link to="/admin">Admin</router-link>
     <p>View source code on <a
-        href="https://github.com/BYU-CS-260-Winter-2020/lab-4-museum-of-ordinary-objects-jaredrossberg">Github</a></p>
+        href="https://github.com/jaredrossberg/creative4">Github</a></p>
   </div>
 </div>
 </template>
