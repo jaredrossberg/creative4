@@ -93,7 +93,7 @@ app.put('/api/items/:id', async (req, res) => {
     item.description = req.body.description;
     await item.save();
     res.send(item);
-  } catch {
+  } catch (error) {
     console.log(error);
     res.sendStatus(500);
   }
